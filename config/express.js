@@ -17,7 +17,7 @@ module.exports = () => {
     }));
     app.use(bodyParser.json());
     app.use(methodOverride());
-    app.set('views','./app/views');
+    app.set('views','views/pages');
     app.set('view engine','ejs');
     app.use('/',require('../app/routes/index.server.routes.js'));
     app.use(express.static('./public'));
